@@ -410,6 +410,67 @@ public int Min_num(){
 
     }
 
+    // PLACING EVEN ODD IN SAME ORDER
+    public void EvenOdd(Single_linklist l1) {
+
+        if (head == null) {
+            System.out.println("List is Empty:");
+        }
+
+        Node current1 = l1.head;
+        Node current2 = l1.head;
+
+        while (current1 != null) {
+
+            if (current1.data % 2 == 0) {
+
+                System.out.println(current1.data + " ");
+
+            }
+            current1 = current1.next;
+        }
+
+        while (current2 != null) {
+
+            if (current2.data % 2 != 0) {
+
+                System.out.println(current2.data + " ");
+
+            }
+            current2 = current2.next;
+
+        }
+
+    }
+
+
+// FINDING VALUE BY INDEX NUMBER
+    public void GetNth(int index) {
+
+        int count = 1;
+
+        if (head == null) {
+
+            System.out.println("list is Empty");
+        }
+
+        Node current = head;
+        while (current != null ) {
+            if(index == count-1) {
+
+                System.out.println("\nThe Value at index " + index +" is:" + current.data);
+                break;
+
+            }
+            current = current.next;
+            count++;
+
+        }
+
+
+    }
+
+
 
 
 
