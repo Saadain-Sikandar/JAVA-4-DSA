@@ -107,6 +107,15 @@ public class Main {
 //        System.out.println("Prime Numbers are:");
 //        sll.Prime();
 
+
+        // PLACING EVEN ODD IN SAME ORDER
+//        sll.EvenOdd(sll);
+
+
+        // FINDING VALUE BY INDEX NUMBER
+//        sll.GetNth(3);
+
+        
     }
 }
 
